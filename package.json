@@ -1,0 +1,25 @@
+{
+  "name": "writing-javascript-actions",
+  "version": "1.0.0",
+  "description": "Learning Labs GitHub Actions: Writing JavaScript Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "open https://lab.github.com/githubtraining/github-actions:-writing-javascript-actions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingChewie/writing-javascript-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingChewie/writing-javascript-actions/issues"
+  },
+  "homepage": "https://github.com/codingChewie/writing-javascript-actions#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}

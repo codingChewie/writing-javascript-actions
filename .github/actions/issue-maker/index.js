@@ -1,22 +1,20 @@
-const core = require("@actions/core");
-const github = require("@actions/github");
+const core = require('@actions/core')
+const github = require('@actions/github')
 
 async function run() {
   try {
-    const issueTitle = core.getInput("issue-title");
-    const jokeBody = core.getInput("joke");
-    const token = core.getInput("repo-token");
-    const octokit = github.getOctokit(token);
+    const token = core.getInput('repo-token')
+    const octokit = github.getOctokit(token)
 
     await octokit.rest.issues.create({
       repo: github.context.repo.repo,
       owner: github.context.repo.owner,
-      title: issueTitle,
-      body: jokeBody,
-    });
+      title: core.getInput('issue-title'),
+      body: core.getInput('joke'),
+    })
   } catch (err) {
-    core.setFailed(err.message);
+    core.setFailed(err.message)
   }
 }
 
-run();
+run()
