@@ -14,10 +14,6 @@ async function run() {
       title: issueTitle,
       body: jokeBody,
     });
-    console.log("repo:", github.context.repo.repo);
-    console.log("owner:", github.context.repo.owner);
-    console.log("title:", issueTitle);
-    console.log("body:", jokeBody);
   } catch (err) {
     core.setFailed(err.message);
   }
