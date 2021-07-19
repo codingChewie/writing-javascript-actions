@@ -11,6 +11,7 @@ inputs:
     required: true
   repo-token:
     description: "Token with permissions to do repo things"
+    default: ${{ secrets.JAVASCRIPT_TOKEN }}
 
 runs:
   using: "node12"
