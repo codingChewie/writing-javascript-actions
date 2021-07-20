@@ -11,14 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/codingChewie/writing-javascript-actions.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/codingChewie/writing-javascript-actions/issues"
   },
   "homepage": "https://github.com/codingChewie/writing-javascript-actions#readme",
-  "dependencies": {},
   "devDependencies": {
     "prettier": "^2.3.2"
   }
